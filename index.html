@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link rel="icon" type="image" href="weatherate-icon.png">
+    <link rel="stylesheet" href="index.css" />
+    <link href="https://fonts.googleapis.com/css?family=Nova+Flat" rel="stylesheet">
+  </head>
+
+  <body>
+    
+    <div id="app">
+        <div class="title-container">
+            <img class="title-icon" src="weatherate-icon.png" />
+            <h1>WEATHER</h1>
+        </div>
+        <div id="current"></div>
+      
+        <img id="symbol" src="#" />
+        <div id="weather"></div>
+        <div id='input-container'>
+            <input id="city-input" type="text" placeholder="City name" />
+        </div>
+        <button id="change-button" onclick="selectLocation()">Change city</button>
+      
+        <button id="locate-button" onclick="getLocation()">Use my location</button>
+        <div id="your"></div>
+    </div>
+
+    <script type="text/javascript" src="index.js"></script>
+  </body>
+</html>
