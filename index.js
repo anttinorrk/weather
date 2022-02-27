@@ -1,5 +1,4 @@
 
-const mykey = config.my_key;
 
 let city = "Helsinki";
 let latitude = 0;
@@ -27,7 +26,7 @@ function fetchWeatherData() {
     byWhat = `q=${city}`;
   }
   fetch(
-    `https://api.openweathermap.org/data/2.5/weather?${byWhat}&appid=${mykey}`
+    `https://api.openweathermap.org/data/2.5/weather?${byWhat}&appid=aba452070c72a1ab5d871383bdd76609`
   )
     .then((res) => res.json())
     .then((data) => renderWeatherData(data));
